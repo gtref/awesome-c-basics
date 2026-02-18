@@ -1,48 +1,40 @@
-# awesome-c-basics
+# Awesome C Basics [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-A list of tools and libraries for people and developers just starting out in C.
+> A list of tools and libraries for people and developers just starting out in C.
 
-[![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d1a01ee8/media/badge.svg)](https://github.com/sindresorhus/awesome)
-![Stars](https://img.shields.io/github/stars/gtref/awesome-c-basics?style=social)
----
+## Contents
 
-Below is a list of my favorite websites and tools for C programming development!
-
-| Name | About | Section Link |
-| :--- | :--- | :--- |
-| Visual Studio | An advanced programming environment by Microsoft. | [Jump to Section](#visual-studio) |
-| libc | The standard C libraries for input/output and core functions. | [Jump to Section](#libc) |
-| W3Schools | A C tutorial to help guide you through the basics. | [External Link](https://www.w3schools.com/c/index.php) |
-
----
+- [Visual Studio](#visual-studio)
+- [Standard Libraries](#standard-libraries)
+- [Learning Resources](#learning-resources)
 
 ## Visual Studio
 
-Visual Studio is an advanced programming environment by Microsoft. It is quite good in my experience because when you load the installer and select **"Desktop development with C++[^note]"** you can customize your C programming environment.
+- [Visual Studio](https://visualstudio.microsoft.com/) - Advanced programming environment by Microsoft that allows a customized C environment by selecting "Desktop development with C++". 
+
+For a minimal installation to save disk space, select only "MSVC Build Tools x64/86 (Latest)", "C++ Profiling Tools", "IntelliCode", and the "Windows 11 SDK". This provides the core parts of the runtime without unnecessary weight.
 
 By installing this, you get the four essential parts of the Microsoft C Runtime:
-1. **UCRT:** The Universal C Runtime (Standard C functions).
-2. **vcruntime:** Compiler-specific support code.
-3. **CRT Startup:** The hidden code that prepares your `main()` function.
-4. **msvcprt:** Necessary C++ base support for the toolset.
 
-To install it [follow this link!](https://visualstudio.microsoft.com/)
+* **UCRT:** The Universal C Runtime for standard C functions.
+* **vcruntime:** Compiler-specific support code.
+* **CRT Startup:** The code that prepares your `main()` function.
+* **msvcprt:** Necessary C++ base support for the toolset.
 
----
+## Standard Libraries
 
-## libc
+- [libc](https://www.gnu.org/software/libc/) - Standard library foundation that provides essential headers like `<stdio.h>`, `<stdlib.h>`, and `<unistd.h>`. 
 
-`libc` is the standard library for the C programming language. It is the foundation that provides essential headers like `<stdio.h>`, `<stdlib.h>`, and `<unistd.h>`[^1] (for Linux/macOS users). 
+Note that `unistd.h` is the header name for the POSIX operating system API, which is standard on Linux and macOS but not natively part of MSVC on Windows. These libraries allow your programs to:
 
-It acts as the bridge between your code and the operating system, allowing your programs to:
-* **Interact with users** (printing text or reading keyboard input).
-* **Manage memory** (allocating space for data like `malloc`).
-* **Talk to the Filesystem** (opening and saving files).
+* Interact with users by printing text or reading input.
+* Manage memory by allocating space using functions like `malloc`.
+* Talk to the filesystem to open and save files.
 
+## Learning Resources
 
+- [W3Schools](https://www.w3schools.com/c/index.php) - Comprehensive C tutorial designed to guide beginners through the basics.
 
----
+## License
 
-## Footnotes
-[^note]: **Minimal Install Guide:** To save disk space, only select: **"MSVC Build Tools x64/86 (Latest)"**, **"C++ Profiling Tools"**, **"IntelliCode"**, and the **"Windows 11 SDK"**. This provides all the core parts of the runtime without the massive extra weight of unnecessary C++ libraries.
-[^1]: `unistd.h` is the header name for the POSIX operating system API, standard on Linux and macOS but not natively part of MSVC on Windows.
+This project is licensed under the MIT License.
