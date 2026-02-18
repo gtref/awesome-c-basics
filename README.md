@@ -2,6 +2,8 @@
 
 A list of tools and libraries for people and developers just starting out in C.
 
+[![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d1a01ee8/media/badge.svg)](https://github.com/sindresorhus/awesome)
+![Stars](https://img.shields.io/github/stars/gtref/awesome-c-basics?style=social)
 ---
 
 Below is a list of my favorite websites and tools for C programming development!
